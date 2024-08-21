@@ -1,6 +1,5 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-    
+    // Desplazamiento suave
     const links = document.querySelectorAll('nav a');
 
     for (const link of links) {
@@ -11,23 +10,29 @@ document.addEventListener("DOMContentLoaded", function() {
             targetElement.scrollIntoView({ behavior: 'smooth' });
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", function() {
+    // Manejo del menú de navegación móvil
     const menuIcon = document.querySelector('.menu-icon');
     const navLinks = document.querySelector('.nav-links');
 
     menuIcon.addEventListener('click', function() {
         navLinks.classList.toggle('active');
     });
-});
 
-window.addEventListener('scroll', function() {
+    // Cambio de transparencia en la barra de navegación al desplazarse
     const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {  // Puedes ajustar este valor según prefieras
-        navbar.classList.add('transparent');
-    } else {
-        navbar.classList.remove('transparent');
-    }
-});
 
+    function handleScroll() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('transparent');
+        } else {
+            navbar.classList.remove('transparent');
+        }
+    }
+
+    // Ejecutar la función al cargar la página
+    handleScroll();
+
+    // Ejecutar la función cada vez que se hace scroll
+    window.addEventListener('scroll', handleScroll);
+});

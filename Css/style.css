@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #006d77;
+    background-color: #004d40;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -30,23 +30,19 @@ nav {
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Sombra en el lado derecho del menú */
 }
 
-nav.transparent {
-    background-color: rgba(0, 77, 76, 0.8); /* Color de fondo transparente pero aún visible */
-}
-
 .nav-links {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column; /* Apila los enlaces verticalmente */
-    gap: 20px; /* Espaciado mayor entre los enlaces */
+    gap: 75px; /* Espaciado mayor entre los enlaces */
 }
 
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em; /* Tamaño de fuente mayor */
+    font-size: 1.5em; /* Tamaño de fuente mayor */
     transition: color 0.3s ease;
 }
 
@@ -57,7 +53,7 @@ nav.transparent {
 .menu-icon {
     display: none;
     cursor: pointer;
-    margin-bottom: 20px; /* Espacio debajo del icono */
+    margin-bottom: 50px; /* Espacio debajo del icono */
 }
 
 .menu-icon img {
@@ -69,7 +65,7 @@ section {
     padding: 40px; /* Aumenta el padding para más espacio interno */
     margin: 30px auto; /* Ajusta el margen superior e inferior */
     background-color: #ffffff;
-    border-radius: 15px; /* Radio de borde más grande para bordes redondeados */
+    border-radius: 40px; /* Radio de borde más grande para bordes redondeados */
     max-width: 900px; /* Aumenta el ancho máximo */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Sombra más grande */
     transition: background-color 0.3s ease;
@@ -83,7 +79,7 @@ section h2 {
 
 section p {
     font-size: 1.2em; /* Tamaño de fuente aumentado */
-    line-height: 1.8em; /* Espacio entre líneas aumentado */
+    line-height: 2em; /* Espacio entre líneas aumentado */
     color: #555;
 }
 
@@ -108,7 +104,7 @@ section p {
 }
 
 .project-card img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    width: 35%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     height: auto;
     border-radius: 15px 15px 0 0; /* Radio de borde más grande */
     object-fit: cover;
@@ -140,7 +136,7 @@ section p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px; /* Espacio mayor entre los elementos */
+    gap: 20px; /* Espacio mayor entre los elementos */
 }
 
 .profile-pic {
@@ -181,7 +177,7 @@ section p {
 /* Principios */
 .mv-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -201,8 +197,8 @@ section p {
 }
 
 .mv-card p {
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1.1em;
+    line-height: 2em;
 }
 
 .mv-card:hover {
@@ -228,7 +224,7 @@ section p {
 
 .presentacion-content p {
     font-size: 1.1em;
-    line-height: 1.6em;
+    line-height: 2em;
     color: #555; 
     margin-top: 0; 
     flex: 1; 
@@ -237,7 +233,7 @@ section p {
 /* Servicios */
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -285,6 +281,17 @@ section p {
     color: #ffffff; 
 }
 
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Centra el contenido del pie de página */
+    position: relative;
+    bottom: 0;
+    width: 96.6%;
+}
+
 /* Estilos para los íconos de redes sociales */
 .social-icons {
     display: flex;
@@ -302,7 +309,6 @@ section p {
     width: 40px; 
     height: 40px;
     object-fit: contain;
-    filter: grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 
